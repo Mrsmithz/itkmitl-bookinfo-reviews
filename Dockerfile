@@ -1,5 +1,5 @@
 # MULTISTAGE Build
-FROM gradle AS builder
+FROM gradle:7.2.0-jdk11 AS builder
 WORKDIR /opt/java/
 COPY . /opt/java/
 RUN gradle clean build
