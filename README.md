@@ -16,3 +16,9 @@ gradle build
 docker build -t reviews .
 docker run -d --name reviews -p 8082:8082 reviews
 ```
+
+## How to run with docker-compose
+
+```bash
+docker-compose up
+```
